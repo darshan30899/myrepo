@@ -7,15 +7,14 @@ terraform {
   }
 }
 
+# Configure the GitHub Provider
 provider "github" {
   token = "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"
 }
 
 resource "github_repository" "example" {
-  name        = "baker"
-  description = "My awesome "
+  name        = "Newrepo"
+  description = "My awesome codebase"
 
   visibility = "public"
-
-
 }
