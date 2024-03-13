@@ -1,0 +1,16 @@
+trigger:
+- master
+
+pool:
+  name: linux-box
+  vmImage: linux-box
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    terraform init
+    terraform plan
+    terraform apply -auto-aprove
