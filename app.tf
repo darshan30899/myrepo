@@ -1,9 +1,9 @@
 provider "github" {
-    token = "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"
+    token = "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"
  }
     
-resource "github_repository" "terraform" {
-    name        = "Terraform"
+resource "github_repository" "terraform" {demoproject
+    name        = ""
     description = "Test for terraform intergration"
     visibility = "private"
   }
