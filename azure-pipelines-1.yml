@@ -14,3 +14,6 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'terraform init'
+- task: CmdLine@2
+  inputs:
+    script: 'terraform plan'
